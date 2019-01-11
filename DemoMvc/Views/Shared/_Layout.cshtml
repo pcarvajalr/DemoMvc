@@ -20,16 +20,16 @@
                     <div class="col-md-12">
                         <nav class="navbar navbar-expand-lg navbar-light">
                             <div class="navbar-brand">@Html.ActionLink("BizzCoom", "Index", "Home")</div>
-                            <form class="form-inline">
-                                <input class="form-control" type="search" placeholder="Buscar..." aria-label="Search">
-                                <button class="btn btn-outline-success" type="submit">Buscar</button>
-                            </form>
+                            
                             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                                 <span class="icon-menu"></span>
                             </button>
                             <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
                                 <ul class="navbar-nav">
-                                    
+                                    <form class="form-inline">
+                                        <input class="form-control" type="search" placeholder="Buscar..." aria-label="Search">
+                                        <button class="btn btn-outline-success" type="submit">Buscar</button>
+                                    </form>
                                     <li class="nav-item dropdown">
                                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                             Ayuda
