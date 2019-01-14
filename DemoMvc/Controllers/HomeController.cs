@@ -19,6 +19,22 @@ namespace DemoMvc.Controllers
     {
         public ActionResult Index()
         {
+            if (User.Identity.IsAuthenticated)
+            {
+                using (ApplicationDbContext db = new ApplicationDbContext())
+                {
+                    var idUsuarioActual = User.Identity.GetUserId();
+
+                    var roleManager = new RoleManager<IdentityRole>
+                        (new RoleStore<IdentityRole>(db));
+
+                    var resultado = roleManager.Create(new IdentityRole("ApruebaPrestamos"));
+
+
+                }
+            }
+
+
             ///////////////////CREA UN NUEVO USUARIO AL INGRESAR AUTENTICADO A INDEX/HOME///////////
 
             //var estaautenticado = User.Identity.IsAuthenticated;
