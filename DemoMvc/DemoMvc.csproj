@@ -257,6 +257,7 @@
     <Content Include="Imagenes\find-place3.jpg" />
     <Content Include="Imagenes\find-place4.jpg" />
     <Content Include="Imagenes\find-place5.jpg" />
+    <Content Include="Imagenes\Icons\_ionicons_svg_ios-menu.svg" />
     <Content Include="Imagenes\reserve-slide1.jpg" />
     <Content Include="Imagenes\reserve-slide2.jpg" />
     <Content Include="Imagenes\reserve-slide3.jpg" />
